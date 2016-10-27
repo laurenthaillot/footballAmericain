@@ -12,9 +12,26 @@ public class IndexAction {
     @Out
     String prenom;
 
+
     @Action("/")
     public String view() {
-        prenom = "Eric";
+        prenom = "Laurent";
         return "/index";
+
     }
+
+      @Action("/laurent")
+    public String view2() {
+        prenom = "Pour voir la difference";
+        return "/index";
+
+    }
+
+@Action("/laurenceetstephane")
+    public String view3() {
+        prenom = "Je suis entre Laurence et Stephane";
+        return "/index";
+
+    }
+
 }
