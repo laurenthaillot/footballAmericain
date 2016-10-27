@@ -12,8 +12,9 @@ public class IndexAction {
     @Out
     String prenom;
 
-    @Action
-    public void view() {
+    @Action("/")
+    public String view() {
         prenom = "Eric";
+        return "/index";
     }
 }
