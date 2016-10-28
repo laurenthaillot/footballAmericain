@@ -27,7 +27,7 @@ public class IndexAction {
 
     }
 
-@Action("/laurenceetstephane")
+	@Action("/laurenceetstephane")
     public String view3() {
         prenom = "Je suis entre Laurence et Stephane";
         return "/index";
